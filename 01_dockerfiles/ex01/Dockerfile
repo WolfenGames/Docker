@@ -13,3 +13,5 @@ EXPOSE 9987/UDP 30033 10011
 WORKDIR ${TS3DIR}
 
 ENTRYPOINT [ "sh", "ts3server_minimal_runscript.sh" ]
+
+# docker run -dit --init --rm --name ts3server -p 9987:9987/udp -p 10011:10011 -p 30033:30033 ex01
